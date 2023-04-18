@@ -19,6 +19,8 @@ const ChatScreen = ({ navigation, route }: any) => {
     const { userData, theme } = useSelector((state: any) => state.auth);
     let fontColor = (theme != "dark") ? "#002885" : "#F2F8FF";
 
+    console.log("test---", theme)
+
     const [search, setSearch] = useState<string>("");
     const [show, setShow] = useState<boolean>(false);
     const [users, setUsers] = useState<any>(null);
@@ -145,7 +147,7 @@ const ChatScreen = ({ navigation, route }: any) => {
                                         <Layout style={{ flexDirection: "row" }}>
                                             {!show ?
                                                 <>
-                                                    <TouchableOpacity hitSlop={hitSlop} onPress={() => signOut(userData, setLoading)}>
+                                                    <TouchableOpacity onPress={() => signOut(userData, setLoading)}>
                                                         <Icon
                                                             pack={'feather'}
                                                             name={'log-out'}
@@ -161,7 +163,7 @@ const ChatScreen = ({ navigation, route }: any) => {
                                                     </TouchableOpacity>
                                                 </>
                                                 : <></>}
-                                            <TouchableOpacity hitSlop={hitSlop} onPress={() => setShow(c => !c)}>
+                                            <TouchableOpacity  onPress={() => setShow(c => !c)}>
                                                 <Icon
                                                     pack={'feather'}
                                                     name={show ? 'x-circle' : "search"}

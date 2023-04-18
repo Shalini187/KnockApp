@@ -12,10 +12,12 @@ export const isIos = Platform.OS == "ios";
 export const checkTheme = () => {
     getItem("Theme").then((res: any) => {
         const { dispatch } = store;
-        dispatch({
-            type: types.CHANGE_THEME,
-            payload: res,
-        });
+        if (!!res) {
+            dispatch({
+                type: types.CHANGE_THEME,
+                payload: res,
+            });
+        }
     }).catch((e) => {
         console.log(e);
     });

@@ -2,7 +2,7 @@ import types from "../types";
 
 const initial_state = {
   userData: {},
-  theme: "light"
+  theme: "dark"
 };
 
 export default function (state = initial_state, action) {
