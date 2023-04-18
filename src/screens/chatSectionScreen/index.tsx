@@ -57,7 +57,7 @@ const ChatSectionScreen = ({ navigation, route }: any) => {
         setSearch(searchText);
         const fuseCategory = new Fuse(messages, searchChatOptions);
         var temp = fuseCategory?.search(searchText);
-        let dummyArray: any = [], dummyArray_: any = [];
+        let dummyArray: any = [];
         temp?.forEach((item) => { dummyArray?.push(item?.item) });
         setMessages(dummyArray);
 
