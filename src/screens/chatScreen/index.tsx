@@ -1,8 +1,8 @@
 import { Icon, Layout, Text } from "@ui-kitten/components";
 import React, { useCallback, useEffect, useState } from "react";
 import { FlatList, Keyboard, RefreshControl, TouchableOpacity } from "react-native";
-import { HeaderBar, Loader, SystemSearch, ThemeProvider, WrapperContainer } from "../../components";
-import { COLORS, fontFamily, hitSlop, moderateScale } from "../../constants";
+import { HeaderBar, SystemSearch, ThemeProvider, WrapperContainer } from "../../components";
+import { COLORS, fontFamily, hitSlop, moderateScale, textScale } from "../../constants";
 import { getGroups, getLoginUsers, getUsers, searchOptions, signOut, titleWords } from "../../utils";
 import { chatStyles } from '../../styles';
 import { useSelector } from "react-redux";
@@ -163,7 +163,7 @@ const ChatScreen = ({ navigation, route }: any) => {
                                                     </TouchableOpacity>
                                                 </>
                                                 : <></>}
-                                            <TouchableOpacity  onPress={() => setShow(c => !c)}>
+                                            <TouchableOpacity onPress={() => setShow(c => !c)}>
                                                 <Icon
                                                     pack={'feather'}
                                                     name={show ? 'x-circle' : "search"}
@@ -187,10 +187,9 @@ const ChatScreen = ({ navigation, route }: any) => {
                                     }
                                     ListEmptyComponent={() => {
                                         return (
-                                            <Loader />
+                                            <Text style={{ fontFamily: fontFamily.proximaBold, fontSize: textScale(20), alignSelf: "center", paddingVertical: "50%" }}>{`Let's Start!!!! 🎬 `}</Text>
                                         )
                                     }}
-                                    contentContainerStyle={{ paddingBottom: 30, margin: moderateScale(8) }}
                                     renderItem={({ item, index }) => { return <RenderCard item={item} index={index} /> }}
                                     keyExtractor={(item) => item?.uid}
                                 />
