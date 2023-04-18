@@ -238,10 +238,10 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file('sensehawk.keystore')
-            storePassword 'sensehawk'
-            keyAlias 'sensehawk'
-            keyPassword 'sensehawk'
+            storeFile file('knockapp.keystore')
+            storePassword 'knockforall'
+            keyAlias 'knockforall'
+            keyPassword 'knockforall'
         }
     }
     buildTypes {

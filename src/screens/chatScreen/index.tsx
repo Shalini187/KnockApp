@@ -147,7 +147,7 @@ const ChatScreen = ({ navigation, route }: any) => {
                                         <Layout style={{ flexDirection: "row" }}>
                                             {!show ?
                                                 <>
-                                                    <TouchableOpacity onPress={() => signOut(userData, setLoading)}>
+                                                    <TouchableOpacity hitSlop={hitSlop} onPress={() => signOut(userData, setLoading)}>
                                                         <Icon
                                                             pack={'feather'}
                                                             name={'log-out'}
