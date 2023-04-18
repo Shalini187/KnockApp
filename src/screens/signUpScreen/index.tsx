@@ -31,12 +31,6 @@ const SignupScreen = ({ navigation }: any) => {
 
     let { Email: email, Password: password, Name: name } = form || {};
 
-    if (loading) {
-        return (
-            <Loader />
-        )
-    }
-
     const userSignup = async () => {
         setLoading(true);
         try {
