@@ -1,0 +1,49 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/HelveticaNeue-Bold.ttf",
+      "sha1": "4df1c65ace6cb5dfa38ef3f2b59e89ab6d08ada8"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeue-ExtraBold.ttf",
+      "sha1": "0c828a7876acbabf4471a32182dfb13e1b357977"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeue-Light.ttf",
+      "sha1": "d82ba04b7438da9836d701bbf704600d77b466c0"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeue-Medium.ttf",
+      "sha1": "5b235bd8ab01aa99e3a2a66daea10350a9d254ed"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeue-Regular.ttf",
+      "sha1": "14236487c484725caf35ed434068fca8ab7e750f"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-Bold.ttf",
+      "sha1": "f16eaf2cef7f373becb0510f349bc21260ff00a6"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-ExtraBold.ttf",
+      "sha1": "1d5d8556a726686aaa61a32b007a26a06d088e79"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-Light.ttf",
+      "sha1": "50a143500dc386163260367b55c9c031bd639736"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-Medium.ttf",
+      "sha1": "c9e391ad282d35a2f1315c04f386edd66540ed28"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-Regular.ttf",
+      "sha1": "b39be6d1b45b0bc0ad73c5048cf2fb66424ddcc1"
+    },
+    {
+      "path": "src/assets/fonts/Proxima-SemiBold.ttf",
+      "sha1": "60e192efc66da6776978bacec54a78cdea78c6d2"
+    }
+  ]
+}

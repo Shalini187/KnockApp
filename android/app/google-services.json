@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "869234386607",
+    "firebase_url": "https://sensehawk-3b375-default-rtdb.firebaseio.com",
+    "project_id": "sensehawk-3b375",
+    "storage_bucket": "sensehawk-3b375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869234386607:android:8a6eeddb012a7b3dbf965a",
+        "android_client_info": {
+          "package_name": "com.mycaptain.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869234386607-pc6h46n273bk4i3341r9nd405cvdo91p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycaptain.chatapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "869234386607-7ldm51026tdq9kej71tm7ucvr4a6r4mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnKoQponkgcDRrkt6UP4r84MlGXjcTNs"
+        },
+        {
+          "current_key": "AIzaSyB5L3s9pi3giir9J_IcLbfhrqj7Avkubfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869234386607-7ldm51026tdq9kej71tm7ucvr4a6r4mk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869234386607-jg9mrkp6eqtql1iu79h150qdijof6vo6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.SenseHawk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869234386607:android:548b8c57d3a1695cbf965a",
+        "android_client_info": {
+          "package_name": "com.sensehawk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869234386607-7ldm51026tdq9kej71tm7ucvr4a6r4mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnKoQponkgcDRrkt6UP4r84MlGXjcTNs"
+        },
+        {
+          "current_key": "AIzaSyB5L3s9pi3giir9J_IcLbfhrqj7Avkubfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869234386607-7ldm51026tdq9kej71tm7ucvr4a6r4mk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869234386607-jg9mrkp6eqtql1iu79h150qdijof6vo6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.SenseHawk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
