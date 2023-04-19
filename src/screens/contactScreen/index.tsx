@@ -1,6 +1,6 @@
 import { Icon, Layout, Text } from "@ui-kitten/components";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Alert, FlatList, RefreshControl, ScrollView, TouchableOpacity } from "react-native";
+import { Alert, FlatList, RefreshControl, TouchableOpacity } from "react-native";
 import { BottomUpRawSheet, HeaderBar, Loader, SystemModal, ThemeProvider, WrapperContainer } from "../../components";
 import { COLORS, fontFamily, moderateScale } from "../../constants";
 import { docGroupId, getGroups, getLoginUsers, getUsers, titleWords } from "../../utils";
@@ -49,7 +49,7 @@ const ContactScreen = ({ navigation, route }: any) => {
         getGroups((val: any) => {
             setGroups(val);
             setBackupGroups(val);
-        });
+        }, userData);
         setRefresh(false);
     }
 
@@ -260,8 +260,8 @@ const ContactScreen = ({ navigation, route }: any) => {
                                 setModalVisible={setModal}
                                 onCreate={onVisible}
                                 children={<></>}
-                                setGroupName = {setGroupName}
-                                groupName = {groupName}
+                                setGroupName={setGroupName}
+                                groupName={groupName}
                             />
                             <BottomUpRawSheet
                                 sheetRef={sheetRef}

@@ -135,8 +135,8 @@ export const getUsers = async (setUsers: Function, user: any) => {
     setUsers(allusers);
 }
 
-export const getGroups = async (setGroups: Function) => {
-    const querySanp = await firestore().collection('groups').get();
+export const getGroups = async (setGroups: Function, user: any) => {
+    const querySanp = await firestore().collection('groups').where('usersList', 'array-contains', user?.uid).get();
     const allusers = querySanp.docs.map((docSnap: any) => docSnap.data());
     setGroups(allusers);
 }

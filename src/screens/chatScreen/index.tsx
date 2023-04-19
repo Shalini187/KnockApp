@@ -19,8 +19,6 @@ const ChatScreen = ({ navigation, route }: any) => {
     const { userData, theme } = useSelector((state: any) => state.auth);
     let fontColor = (theme != "dark") ? "#002885" : "#F2F8FF";
 
-    console.log("test---", theme)
-
     const [search, setSearch] = useState<string>("");
     const [show, setShow] = useState<boolean>(false);
     const [users, setUsers] = useState<any>(null);
@@ -67,7 +65,7 @@ const ChatScreen = ({ navigation, route }: any) => {
         getGroups((v: any) => {
             setGroups(v);
             onUpdate({ groups: v });
-        });
+        }, userData);
         setRefresh(false);
     }
 
