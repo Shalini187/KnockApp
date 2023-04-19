@@ -85,7 +85,7 @@ const ContactScreen = ({ navigation, route }: any) => {
         try {
             let payload = {
                 name: `${groupName}`,
-                usersList: checkItems,
+                usersList: [...checkItems, userData?.uid],
                 uid: groupId
             }
             firestore().collection('groups').doc(groupId).set({ ...payload });
