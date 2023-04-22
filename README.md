@@ -2,7 +2,7 @@
 Social Media Group Chat App
 
 ## SetUp React Native Environment
-Refer to the attached link:
+Refer to the attached links:
 https://reactnative.dev/docs/environment-setup
 
 ## Folder structure
